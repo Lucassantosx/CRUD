@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Fill JS table CSM</title>
+    <link rel="stylesheet" href="C:\Users\lucas\source\repos\CRUD\CRUD 01\TelaReset.css" />
+    <link rel="stylesheet" href="C:\Users\lucas\source\repos\CRUD\CRUD 01\stylo.css" />
+    <script type="text/javascript" src="C:\Users\lucas\source\repos\CRUD\CRUD 01\Crud01.js"></script>
+</head>
+
+<body>
+    <div id="nav">
+        Tela de Cadastro
+    </div>
+    <section id="tabela">
+        <form method="POST">
+            <div id="input-data">
+                <input id="nome" class="input-text" placeholder="Nome" type="text" required />
+                <input id="email" class="input-text" placeholder="Email" type="email" required />
+                <input id="telefone" class="input-text" placeholder="Telefone" type="number" required />
+                <input id="trabalho" class="input-text" placeholder="Profissão" type="text" required />
+                <input class="input-btn" type="submit" value="Enviar" onclick="return adicionar()" />
+            </div>
+        </form>
+        <table id="minhaTabela">
+            <tr id="0">
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Telefone</th>
+                <th>Profissão</th>
+                <th>Ação</th>
+            </tr>
+        </table>
+    </section>
+</body>
+
+</html>

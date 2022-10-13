@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <form>
+        <input name="campoCriaPost" placeholder="Digite o seu Post" />
+        <button type="submit">Postar</button>
+
+    </form>   
+
+    <ul class="listadePosts"> </ul>
+    
+    <script>
+
+        //linguagem pura
+        // Criar e Atualizar as variaveis
+        // Sincrionizar Web + javascript
+
+        const $meuForm = document.querySelector('form');
+        console.log($meuForm);
+
+        $meuForm.addEventListener('submit', function criaPostController(infosDoEvento) {
+            infosDoEvento.preventDefault(); // previne o padrão que ia acontecer
+            console.log('Estamos criando um post novo')
+            const $campoCriaPost = document.querySelector('input[name="campoCriaPost"]') // atalho guardar o campo do post
+
+            alert($campoCriaPost.value);
+        })
+
+    </script>
+
+
+</body>
+</html>
